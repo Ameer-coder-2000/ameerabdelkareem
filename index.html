@@ -146,19 +146,22 @@
     </ul>
   </nav>
 
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+  <!-- Mobile Nav -->
+  <header class="mobile-topbar z-depth-1">
+    <a aria-label="Toggle visibility of the mobile menu" href="#!" aria-controls="slide-out" aria-expanded="false"
+      class="button-collapse waves-effect waves-dark">
+      <i class="mdi-navigation-menu"></i>
+    </a>
     <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Ameer
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#intro" class="teal-text">Ameer
         Abdelkareem Osman</a><span class="black-text">Full Stack Developer</span>
     </div>
-  </nav>
+  </header>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
+  <div class="mobile-drawer-overlay" aria-hidden="true"></div>
+
+  <aside class="mobile-drawer-shell">
+    <ul id="slide-out" class="side-nav mobile-drawer">
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
@@ -191,7 +194,7 @@
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
       </li>
     </ul>
-  </nav>
+  </aside>
 
   <!-- Main Content-->
   <main>
@@ -730,6 +733,53 @@
     }, { passive: true });
 
     updateWaterEffect();
+
+    const mobileToggle = document.querySelector('.button-collapse');
+    const mobileDrawer = document.getElementById('slide-out');
+    const mobileOverlay = document.querySelector('.mobile-drawer-overlay');
+
+    function setMobileNavOpen(isOpen) {
+      document.body.classList.toggle('nav-open', isOpen);
+
+      if (mobileDrawer) {
+        mobileDrawer.classList.toggle('is-open', isOpen);
+      }
+
+      if (mobileToggle) {
+        mobileToggle.setAttribute('aria-expanded', String(isOpen));
+      }
+    }
+
+    if (mobileToggle && mobileDrawer && mobileOverlay) {
+      mobileToggle.addEventListener('click', function (event) {
+        event.preventDefault();
+        setMobileNavOpen(!document.body.classList.contains('nav-open'));
+      });
+
+      mobileOverlay.addEventListener('click', function () {
+        setMobileNavOpen(false);
+      });
+
+      mobileDrawer.addEventListener('click', function (event) {
+        const link = event.target.closest ? event.target.closest('a') : null;
+
+        if (link && window.innerWidth <= 992) {
+          setMobileNavOpen(false);
+        }
+      });
+
+      window.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+          setMobileNavOpen(false);
+        }
+      });
+
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 992) {
+          setMobileNavOpen(false);
+        }
+      });
+    }
 
     var typed = new Typed('.typing',{
       strings: ["Full Stack Developer", "IT Support", "Web Developer", "Problem Solver"],

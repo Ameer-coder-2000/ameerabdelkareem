@@ -147,6 +147,7 @@ body {
   font-size: 18px;
   background: linear-gradient(180deg, #f8fafc 0%, #eef0f3 100%);
   position: relative;
+  overflow-x: hidden;
   isolation: isolate;
 }
 
@@ -285,6 +286,161 @@ nav.sidebar-nav ul.side-nav.fixed {
 
 nav.hide-on-large {
   display: none !important;
+}
+
+.mobile-topbar,
+.mobile-drawer-shell,
+.mobile-drawer-overlay {
+  display: none;
+}
+
+.mobile-topbar {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  height: 64px;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1100;
+}
+
+.mobile-topbar .button-collapse {
+  align-items: center;
+  border-radius: 999px;
+  color: #111111;
+  display: inline-flex;
+  height: 44px;
+  justify-content: center;
+  width: 44px;
+}
+
+.mobile-topbar .button-collapse i {
+  font-size: 1.5rem;
+  line-height: 44px;
+  padding: 0;
+  top: 0;
+}
+
+.mobile-topbar .name-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding-left: 0.75rem;
+  text-align: right;
+}
+
+.mobile-topbar .name-title a {
+  color: #111111;
+  display: block;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.15;
+  max-width: 56vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mobile-topbar .name-title span {
+  color: #475569;
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.2;
+}
+
+.mobile-drawer-shell {
+  display: none;
+}
+
+.mobile-drawer-overlay {
+  background: rgba(15, 23, 42, 0.46);
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  transition: opacity 0.28s ease;
+  z-index: 1150;
+}
+
+body.nav-open {
+  overflow: hidden;
+}
+
+body.nav-open .mobile-drawer-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#slide-out.mobile-drawer {
+  background: rgba(255, 255, 255, 0.98);
+  border-right: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 18px 0 48px rgba(15, 23, 42, 0.18);
+  height: 100vh;
+  height: 100dvh;
+  left: 0;
+  overflow-y: auto;
+  padding-top: 0.75rem;
+  position: fixed;
+  top: 0;
+  transform: translateX(-110%);
+  -webkit-transform: translateX(-110%);
+  transition: transform 0.28s ease;
+  width: 84vw;
+  max-width: 320px;
+  z-index: 1200;
+}
+
+body.nav-open #slide-out.mobile-drawer {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+#slide-out.mobile-drawer li.logo {
+  background: transparent;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  min-height: auto;
+  padding: 1.25rem 1rem 1rem;
+}
+
+#slide-out.mobile-drawer li.logo a {
+  display: block;
+  text-align: center;
+}
+
+#slide-out.mobile-drawer .profile-pic {
+  border-width: 5px;
+  margin: 0 auto;
+  max-height: 92px;
+  max-width: 92px;
+}
+
+#slide-out.mobile-drawer li.bold a {
+  align-items: center;
+  border-left: 3px solid transparent;
+  display: flex;
+  gap: 0.85rem;
+  line-height: 1.2;
+  min-height: 52px;
+  padding: 0.9rem 1rem;
+}
+
+#slide-out.mobile-drawer li.bold a i {
+  flex: 0 0 auto;
+  padding: 0;
+  top: 0;
+}
+
+#slide-out.mobile-drawer li.bold a span {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 dl {
@@ -760,8 +916,19 @@ small {
 
 @media (max-width: 992px) {
   main {
-    padding-left: 190px;
-    padding-top: 0;
+    padding-left: 0;
+    padding-top: 64px;
+  }
+  nav.sidebar-nav {
+    display: none !important;
+  }
+  .mobile-topbar,
+  .mobile-drawer-shell,
+  .mobile-drawer-overlay {
+    display: block;
+  }
+  .mobile-topbar {
+    display: flex;
   }
   ul.side-nav a {
     line-height: 100%;
@@ -769,31 +936,35 @@ small {
     width: 100%;
   }
   h3 {
-    padding: 20px 30px;
-    margin-bottom: 40px;
+    padding: 18px 18px;
+    margin-bottom: 24px;
   }
   .container {
     margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
   }
   .name-title {
-    display: block;
-    height: 100%;
-    padding-top: 15px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
+    display: flex;
+    height: auto;
+    padding-top: 0;
+    position: static;
+    text-align: right;
+    width: auto;
   }
   .name-title>span, .name-title>a {
-    position: relative;
-    line-height: 20px;
+    position: static;
+    line-height: 1.15;
   }
   .name-title a {
-    font-size: 22px;
+    font-size: 18px;
     display: block;
+    max-width: 56vw;
   }
   .name-title span {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
   }
   h3, .container {
     position: relative;
@@ -802,25 +973,113 @@ small {
   section#intro {
     margin-bottom: 0;
   }
+  #intro.section .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    min-height: calc(100vh - 64px);
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+  #intro.section .container > .col-md-9 {
+    width: 100%;
+  }
+  #intro .content.section-padding.valign {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    max-width: 720px;
+    padding: 1.5rem 0 2rem !important;
+    width: 100%;
+  }
+  #intro .caption {
+    text-align: center;
+  }
+  #intro h2 {
+    font-size: 2rem;
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1.15;
+    margin: 0 0 0.85rem;
+  }
+  #intro h5 {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 1rem;
+  }
+  #intro .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+  #intro .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  #intro .buttons a {
+    margin-top: 0 !important;
+    padding: 10px 18px !important;
+    text-align: center;
+  }
+  .readme,
+  .contactme {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    min-width: 140px;
+  }
   .card .role {
     position: relative;
     right: initial;
     top: initial;
   }
+  .card {
+    margin-bottom: 24px;
+  }
+  #projects .project-card .card-image {
+    height: 180px;
+  }
+  #projects .project-summary,
+  #projects .project-tech,
+  .card ul li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
   h2 {
-    font-size: 22px;
-    line-height: 200%;
-    margin: 30px 0 0;
+    font-size: 20px;
+    line-height: 1.25;
+    margin: 0;
   }
-  #intro.section .container *:not(span) {
-    padding: 0;
+  #intro.section .container {
+    min-height: calc(100vh - 64px);
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
   .card .card-content .card-title {
     font-size: 20px;
     line-height: 24px;
+  }
+  #intro .buttons a {
+    width: 100%;
+  }
+  #intro .social {
+    gap: 0.5rem;
+  }
+  .icon-btn {
+    font-size: 24px;
+    height: 46px;
+    line-height: 46px;
+    width: 46px;
   }
   #experience span.card-title {
     text-align: center;

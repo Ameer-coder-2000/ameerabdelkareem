@@ -34,7 +34,7 @@ This is my personal portfolio website. It showcases my projects, technical skill
 - `assets/img/` - images, logos, and project thumbnails
 - `assets/vendor/typed.js/` - typed text animation library
 - `Resume.pdf` - my CV
-- `ameer.png` - profile photo
+- `ameer.jpeg` - profile photo
 
 ## Run Locally
 

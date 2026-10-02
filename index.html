@@ -3,28 +3,21 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="X-UA-Compatible" content="IE=edge" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Ameer Osman" />
 
-<!-- Google AdSense -->
-<script async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2253711624569029"
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2253711624569029"
     crossorigin="anonymous"></script>
-  
+
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');</script>
   <!-- End Google Tag Manager -->
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="assets/css/style.css" />
   <title>Ameer Abdelkareem Osman | Full Stack Developer</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -33,23 +26,42 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-126939217-2');
   </script>
 
-  <!-- Open Graph-->
+  <!-- Performance: warm up connections before the third-party scripts run -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com" />
+
+  <!-- Fonts -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" />
+
+  <!-- Custom styles (versioned: bust the browser cache on every change) -->
+  <link rel="stylesheet" href="assets/css/style.css?v=9" />
+
+  <!-- Profile photo: load it early so the hero never pops in -->
+  <link rel="preload" as="image" href="ameer.jpeg" fetchpriority="high" />
+
+  <!-- SEO / Open Graph -->
+  <meta name="description"
+    content="Motivated BSc IT graduate focused on full stack web development, IT support, and building practical solutions for real-world problems." />
+  <meta name="author" content="Ameer Abdelkareem Osman" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Ameer Abdelkareem Osman | Full Stack Developer" />
-  <meta property="og:description" content="Full Stack Developer and IT Support professional" />
+  <meta property="og:description"
+    content="Full Stack Developer and IT Support professional building practical web solutions." />
   <meta property="og:site_name" content="Ameer Abdelkareem Osman | Full Stack Developer" />
   <meta property="og:image" content="ameer.jpeg" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Ameer Abdelkareem Osman | Full Stack Developer" />
-  <meta name="twitter:description" content="Full Stack Developer and IT Support professional" />
-  <meta name="author" content="Ameer Abdelkareem Osman" />
-  <meta name="description" content="Motivated BSc IT graduate focused on full stack web development, IT support, and practical web solutions." />
+  <meta name="twitter:description"
+    content="Full Stack Developer and IT Support professional building practical web solutions." />
+
+  <!-- Icons -->
   <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png" />
@@ -66,7 +78,7 @@
   <link rel="manifest" href="assets/img/favicon/manifest.json" />
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#f7f6f2" />
   <meta name="robots" content="index, follow" />
   <!-- Google Site Verification for indexing -->
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
@@ -74,727 +86,418 @@
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
   </noscript>
-  
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="sidebar-nav">
-    <ul class="side-nav fixed section table-of-contents">
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="ameer.jpeg" class="circle img-responsive profile-pic" alt="Ameer Abdelkareem Osman">
+  <!-- ===================================================== icon sprite ==== -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M7 17 17 7M8.5 7H17v8.5" />
+      </symbol>
+      <symbol id="i-external" viewBox="0 0 24 24">
+        <path d="M14 4h6v6M20 4l-8.5 8.5M18 13.5V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5.5" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h15A1.5 1.5 0 0 1 21 7.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5v-9Z" />
+        <path d="m3.6 7 8.4 6 8.4-6" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <path
+          d="M5 3.5h2.2l1.7 4.2-1.8 1.4a11.5 11.5 0 0 0 5.8 5.8l1.4-1.8 4.2 1.7V17a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 3 5.7 2 2 0 0 1 5 3.5Z" />
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M12 4v10m0 0 4-4m-4 4-4-4M4.5 19h15" />
+      </symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24">
+        <path d="M9 9V6.5A1.5 1.5 0 0 1 10.5 5h7A1.5 1.5 0 0 1 19 6.5v7a1.5 1.5 0 0 1-1.5 1.5H15" />
+        <path d="M14.5 10.5h-8A1.5 1.5 0 0 0 5 12v6.5A1.5 1.5 0 0 0 6.5 20h7a1.5 1.5 0 0 0 1.5-1.5v-8Z" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="m5 12.5 4.5 4.5L19 7.5" />
+      </symbol>
+      <symbol id="i-x" viewBox="0 0 24 24">
+        <path d="M6.5 6.5l11 11m0-11-11 11" />
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <path d="M4 8h16M4 16h16" />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M12 21s6.5-5.6 6.5-10.5a6.5 6.5 0 1 0-13 0C5.5 15.4 12 21 12 21Z" />
+        <circle cx="12" cy="10.5" r="2.3" />
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8.2" />
+        <path d="M12 7.5V12l3 2" />
+      </symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24">
+        <path d="M3.5 9 12 4.5 20.5 9 12 13.5 3.5 9Z" />
+        <path d="M7.5 11v4.2c0 1 2 2.3 4.5 2.3s4.5-1.3 4.5-2.3V11M20.5 9v5" />
+      </symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <path d="M17 7h.01" />
+      </symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24">
+        <path
+          d="M14.6 20v-6.3h4.1l.3-2.5h-4.4V9.4c0-1.2.6-1.6 1.8-1.6h2V6.2h-1.8c-1.2 0-2 .8-2 3.2" />
+      </symbol>
+      <symbol id="i-tiktok" viewBox="0 0 24 24">
+        <path d="M15.2 4.5v10.2M15.2 14.7a2.9 2.9 0 1 1-5.8 0 2.9 2.9 0 1 1 5.8 0M15.2 4.5c.45 2.3 2.1 3.9 4.6 4.1" />
+      </symbol>
+      <symbol id="i-volume-off" viewBox="0 0 24 24">
+        <path d="M4 9.5h3.4L12 5.6v12.8L7.4 14.5H4z" />
+        <path d="M16.4 9.6l4.4 4.8M20.8 9.6l-4.4 4.8" />
+      </symbol>
+      <symbol id="i-volume-on" viewBox="0 0 24 24">
+        <path d="M4 9.5h3.4L12 5.6v12.8L7.4 14.5H4z" />
+        <path d="M15.6 9.4a3.6 3.6 0 0 1 0 5.2M18.2 7a7 7 0 0 1 0 10" />
+      </symbol>
+      <symbol id="i-play" viewBox="0 0 24 24">
+        <path d="M8 5.5l11 6.5-11 6.5z" fill="currentColor" stroke="none" />
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path d="m8.5 8-4.5 4 4.5 4M15.5 8l4.5 4-4.5 4M13.5 5l-3 14" />
+      </symbol>
+      <symbol id="i-support" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8.2" />
+        <circle cx="12" cy="12" r="3.4" />
+        <path d="m6 6 3.4 3.4M18 6l-3.4 3.4M6 18l3.4-3.4M18 18l-3.4-3.4" />
+      </symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24">
+        <path d="m12 3.5 1.9 5.6 5.6 1.9-5.6 1.9L12 18.5l-1.9-5.6-5.6-1.9 5.6-1.9L12 3.5Z" />
+        <path d="M18.5 16.5 19.3 19l2.2.8-2.2.8-.8 2.4-.8-2.4-2.2-.8 2.2-.8.8-2.5Z" />
+      </symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24">
+        <path d="m12 4 7.5 4-7.5 4-7.5-4 7.5-4Z" />
+        <path d="m4.5 12 7.5 4 7.5-4M4.5 16l7.5 4 7.5-4" />
+      </symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24">
+        <path d="M4.5 4.5h6v6h-6v-6ZM13.5 4.5h6v6h-6v-6ZM4.5 13.5h6v6h-6v-6ZM13.5 13.5h6v6h-6v-6Z" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- ========================================================== header ==== -->
+  <header class="site-header" id="top">
+    <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <div class="shell header-inner">
+      <a class="brand" href="#home" aria-label="Ameer Abdelkareem Osman — home">
+        <img class="brand-mark" src="ameer.jpeg" alt="" width="40" height="40" />
+        <span class="brand-text">
+          <strong>Ameer Osman</strong>
+          <small>Full Stack Developer</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Section navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="Resume.pdf" target="_blank" rel="noopener">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-download" />
+          </svg>
+          <span>Resume</span>
         </a>
-      </li>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false"
+          aria-controls="mobileMenu">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-menu" />
+          </svg>
+        </button>
+      </div>
+    </div>
 
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <a aria-label="Open Ameer's resume in a new tab" href="Resume.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Mobile Nav -->
-  <header class="mobile-topbar z-depth-1">
-    <a aria-label="Toggle visibility of the mobile menu" href="#!" aria-controls="slide-out" aria-expanded="false"
-      class="button-collapse waves-effect waves-dark">
-      <i class="mdi-navigation-menu"></i>
-    </a>
-    <a id="mobile-avatar-link" aria-label="Navigate to the beginning of the page" href="#intro">
-      <img src="ameer.jpeg" class="circle img-responsive mobile-avatar" alt="Ameer Abdelkareem Osman">
-    </a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#intro" class="teal-text">Ameer
-        Abdelkareem Osman</a><span class="black-text">Full Stack Developer</span>
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a class="mobile-menu__resume" href="Resume.pdf" target="_blank" rel="noopener">Download resume</a>
     </div>
   </header>
 
-  <div class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <main id="main">
+    <!-- ========================================================== hero ==== -->
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
 
-  <aside class="mobile-drawer-shell">
-    <ul id="slide-out" class="side-nav mobile-drawer">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="availability reveal">
+            <span class="availability__dot" aria-hidden="true"></span>
+            <span data-bind="availability">Available for new work</span>
+          </p>
 
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Ameer's Resume in a new tab"
-          href="Resume.pdf" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </aside>
+          <h1 class="hero-title reveal" data-reveal-delay="1">
+            Hi, I'm <span class="hero-title__name">Ameer Abdelkareem
+              <em class="hero-title__accent">Osman</em></span>
+          </h1>
 
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Ameer Abdelkareem Osman.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#f8fafc"></span></h5>
-              <!-- <h5 style="color:#f8fafc">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Motivated BSc IT graduate focused on full stack web development, IT support, and building practical solutions for real-world problems.</h5>
-            </div>
-            <div class="social">
-              <a href="https://in.linkedin.com/in/ameer-abdelkareem-osman-9877a72b4" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="mailto:darkness.2000.2000.1000@gmail.com" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-envelope"></i>
-                </button>
-              </a>
+          <p class="hero-role reveal" data-reveal-delay="2">
+            <span class="hero-role__prefix">I&nbsp;build&nbsp;&amp;&nbsp;support&nbsp;</span>
+            <span class="rotator" id="roleRotator" aria-live="polite"></span>
+          </p>
 
-              <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
-                <button class="icon-btn angellist">
-                  <i class="fa fa-angellist"></i>
-                </button>
-              </a> -->
+          <p class="hero-intro reveal" data-reveal-delay="3" data-bind="heroIntro"></p>
 
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
+          <div class="hero-cta reveal" data-reveal-delay="4">
+            <a class="btn btn-primary" href="#work" id="heroPrimaryCta">
+              <span>View my work</span>
+              <svg class="ico" aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg>
+            </a>
+            <a class="btn btn-ghost" href="Resume.pdf" target="_blank" rel="noopener" id="heroSecondaryCta">
+              <svg class="ico" aria-hidden="true">
+                <use href="#i-download" />
+              </svg>
+              <span>Download CV</span>
+            </a>
           </div>
+
+          <ul class="social-row reveal" data-reveal-delay="5" id="heroSocials"></ul>
+
+          <dl class="hero-stats reveal" data-reveal-delay="6" id="heroStats"></dl>
+
+          <div class="hero-sites reveal" data-reveal-delay="7" id="heroSites" hidden>
+            <p class="hero-sites__label">Live sites</p>
+            <ul></ul>
+          </div>
+        </div>
+
+        <div class="hero-media reveal" data-reveal-delay="3">
+          <div class="portrait">
+            <div class="portrait__frame">
+              <img data-bind="portrait" src="ameer.jpeg" alt="Portrait of Ameer Abdelkareem Osman" />
+            </div>
+            <div class="portrait__glow" aria-hidden="true"></div>
+          </div>
+
+          <div class="float-card float-card--a">
+            <svg class="ico" aria-hidden="true">
+              <use href="#i-code" />
+            </svg>
+            <span>
+              <strong data-bind="statProjects">0</strong> projects shipped
+            </span>
+          </div>
+          <div class="float-card float-card--b">
+            <svg class="ico" aria-hidden="true">
+              <use href="#i-support" />
+            </svg>
+            <span>IT support &amp; web dev</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+        <span>Scroll</span>
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ========================================================= about ==== -->
+    <section class="section" id="about">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow">01 &mdash; About</p>
+          <h2 class="section-title" data-bind="aboutHeading"></h2>
+          <p class="section-lead" data-bind="aboutLead"></p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-prose reveal">
+            <div id="aboutParagraphs"></div>
+          </div>
+
+          <aside class="about-side">
+            <div class="facts-card reveal" data-reveal-delay="1" id="aboutFacts"></div>
+            <div class="strengths-card reveal" data-reveal-delay="2">
+              <h3 class="card-label">What I do</h3>
+              <ul class="chip-list" id="aboutStrengths"></ul>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-        <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            A motivated BSc IT graduate with a strong interest in Full Stack Web Development and IT Support.
+    <!-- ========================================================= skills ==== -->
+    <section class="section section--tint" id="skills">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow">02 &mdash; Skills</p>
+          <h2 class="section-title">The toolkit I reach for</h2>
+          <p class="section-lead">Languages, frameworks, databases and the support tooling that keeps
+            everything running.</p>
+        </header>
 
-          </h2>
-        </blockquote> -->        
-        <p>
-          Motivated and detail-oriented BSc IT graduate with strong interest in Full Stack Web Development and IT Support.
-          Skilled in HTML, CSS, JavaScript, PHP, and MySQL, with hands-on experience building real-world web projects.
-          Familiar with troubleshooting and system configuration, and eager to apply technical knowledge to impactful IT solutions.
-        </p>
-        <ul>
-          <li><b>Languages:</b> HTML, CSS, JavaScript, PHP, Python, SQL, React.js, Flutter</li>
-          <li><b>Core Skills:</b> Full Stack Development, Authentication, REST API, API Integration, Firebase, Git &amp; GitHub</li>
-          <li><b>Support:</b> IT Support, Technical Support, Software Installation &amp; Configuration, Software Development, Web Services, DevOps, SEO</li>
-          <li><b>Soft Skills:</b> Digital Communication, UI/UX Design, System Management, Data Entry Software, Communication Skills, Problem Solving, Customer Service</li>
-        </ul>
-          
-        <!-- <p>
-          
-          Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
-        </p> -->
-        <p>
-          Looking for an opportunity to contribute to meaningful projects, support users effectively, and keep learning through practical real-world challenges.
-        </p>
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        <!-- <p>
-        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-        </p> -->
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marqueeTrack"></div>
       </div>
     </section>
 
+    <!-- ========================================================== work ==== -->
+    <section class="section" id="work">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow">03 &mdash; Selected work</p>
+          <h2 class="section-title">Projects I've designed &amp; built</h2>
+          <p class="section-lead">Full stack systems, management platforms and AI tooling. Open a project
+            to see the live build or the source.</p>
+        </header>
 
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Full stack development" src="assets/img/project-python-flask1.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title teal-text hoverline">Full Stack Web Development</span>
-                <p>
-                  Building practical web projects with HTML, CSS, JavaScript, PHP, MySQL, React.js, Flutter, and Firebase.
-                </p>
-                <ul>
-                  <li>Worked with authentication, REST APIs, and database-backed user flows.</li>
-                  <li>Focused on clean UI, responsive layouts, and reliable functionality.</li>
-                  <li><b>Tools:</b> HTML, CSS, JavaScript, PHP, MySQL, React.js, Flutter, Firebase</li>
-                </ul>
-              </div>
-            </div>
+        <div class="filter-bar reveal" id="projectFilters" role="tablist" aria-label="Filter projects"></div>
+
+        <div class="project-grid" id="projectGrid"></div>
+
+        <p class="project-grid__empty" id="projectEmpty" hidden>No projects in this category yet.</p>
+      </div>
+    </section>
+
+    <!-- ======================================================== showreel ==== -->
+    <section class="section section--tint" id="showreel">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow">04 &mdash; Showreel</p>
+          <h2 class="section-title" data-bind="showreelHeading">How I design, explained by me</h2>
+          <p class="section-lead" data-bind="showreelLead">A short walkthrough of the way I actually think
+            about layout, colour and type.</p>
+        </header>
+
+        <div class="showreel reveal" id="showreelBlock" hidden>
+          <div class="showreel__text">
+            <p class="showreel__caption" id="showreelCaption"></p>
+            <ul class="showreel__facts" id="showreelFacts"></ul>
+            <p class="showreel__hint" id="showreelHint"></p>
           </div>
 
-          <div class="col s12 m6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="IT support and system management" src="assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title teal-text hoverline">IT Support &amp; System Management</span>
-                <p>
-                  Support-oriented experience with troubleshooting, configuration, and day-to-day technical assistance.
-                </p>
-                <ul>
-                  <li>Software installation and configuration, system management, and data entry software.</li>
-                  <li>Strong communication, problem solving, digital communication, and customer service skills.</li>
-                  <li><b>Tools:</b> IT Support, Technical Support, DevOps, SEO, Web Services</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <figure class="video-frame">
+            <video id="showreelVideo" muted loop playsinline preload="none"
+              disablepictureinpicture disableremoteplayback></video>
+            <button class="video-frame__sound" id="showreelSound" type="button"
+              aria-pressed="false" aria-label="Unmute video">
+              <svg class="ico" aria-hidden="true" focusable="false"><use href="#i-volume-off"></use></svg>
+            </button>
+            <div class="video-frame__bar" aria-hidden="true"><i id="showreelBar"></i></div>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row" id="projects-grid"></div>
+    <!-- ===================================================== experience ==== -->
+    <section class="section" id="experience">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow">05 &mdash; Experience</p>
+          <h2 class="section-title">How I work</h2>
+          <p class="section-lead">Two tracks that overlap constantly — building software and keeping
+            systems and people running.</p>
+        </header>
+
+        <ol class="timeline" id="timeline"></ol>
       </div>
     </section>
 
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <div class="row" id="skills-grid"></div>
-      </div>
-    </section>
+    <!-- ====================================================== education ==== -->
+    <section class="section" id="education">
+      <div class="shell">
+        <header class="section-head reveal">
+          <p class="eyebrow">06 &mdash; Education</p>
+          <h2 class="section-title">Study &amp; credentials</h2>
+          <p class="section-lead">Formal education, plus the extra-curricular stuff that made me useful
+            in a team.</p>
+        </header>
 
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title teal-text hoverline">Bachelor of Science in Information Technology</span>
-                </p>
-                <p class="brown-text">PP Savani University (PPSU), Gujarat, India</p>
-                <ul class="browser-default">
-                  <li>Completed part of BSc IT with GPA: 3.88 / 4.00</li>
-                  <li>Royal College, Khartoum, Sudan</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title teal-text hoverline">Diploma in Pharmacy (2021 - 2022)</span>
-                </p>
-                <p class="brown-text">Khartoum, Sudan</p>
-                <ul class="browser-default">
-                  <li>Course completed in Khartoum, Sudan</li>
-                  <li>Certified in Pharmacy Basics and Medical Studies</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m4">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title teal-text hoverline">Additional Information</span>
-                </p>
-                <ul class="browser-default">
-                  <li><b>Languages:</b> English Proficiency Spoken, Arabic</li>
-                  <li><b>Awards / Activities:</b> Participated in Tech Globe - Received a certificate</li>
-                  <li>Active Member of GDGC</li>
-                  <li>Cultural Representative</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="edu-grid" id="eduGrid"></div>
+
+        <div class="cert-block reveal">
+          <h3 class="section-subtitle">Certifications &amp; activities</h3>
+          <div class="cert-grid" id="certGrid"></div>
         </div>
       </div>
     </section>
 
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Call Ameer" href="tel:+24990629171" data-position="top" data-tooltip="Call Ameer"
-            class="btn-floating btn-large waves-effect waves-light black tooltipped"><i class="fa fa-phone"></i></a>
-          <a aria-label="Call Ameer" href="tel:+24990629171" class="hoverline">+24990629171 | +919558684719</a>
-        </p>
-        <p>
-          <a aria-label="Email Ameer" href="mailto:darkness.2000.2000.1000@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Ameer" class="btn-floating btn-large waves-effect waves-light black tooltipped"><i
-              class="fa fa-envelope"></i></a>
-          <a aria-label="Email Ameer" href="mailto:darkness.2000.2000.1000@gmail.com"
-            class="hoverline">darkness.2000.2000.1000@gmail.com</a>
-        </p>
-        <p>
-          <a aria-label="View Ameer on LinkedIn" href="https://in.linkedin.com/in/ameer-abdelkareem-osman-9877a72b4" target="_blank"
-            data-position="top" data-tooltip="View Ameer on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light black tooltipped"><i
-              class="fa fa-linkedin"></i></a>
-          <a aria-label="Ameer on LinkedIn" href="https://in.linkedin.com/in/ameer-abdelkareem-osman-9877a72b4"
-            class="hoverline" target="_blank">in.linkedin.com/in/ameer-abdelkareem-osman-9877a72b4</a>
-        </p>
-        <p>
-          <a aria-label="Download Ameer's resume" href="Resume.pdf" target="_blank"
-            data-position="top" data-tooltip="Download CV"
-            class="btn-floating btn-large waves-effect waves-light black tooltipped"><i
-              class="fa fa-file-pdf-o"></i></a>
-          <a aria-label="Download Ameer's resume" href="Resume.pdf" class="hoverline" target="_blank">Resume.pdf</a>
-        </p>
+    <!-- ======================================================== contact ==== -->
+    <section class="section" id="contact">
+      <div class="shell">
+        <div class="contact-panel reveal">
+          <div class="contact-panel__glow" aria-hidden="true"></div>
+
+          <div class="contact-panel__copy">
+            <p class="eyebrow eyebrow--light">07 &mdash; Contact</p>
+            <h2 class="section-title" data-bind="contactHeading"></h2>
+            <p class="section-lead" data-bind="contactBody"></p>
+            <p class="contact-note" data-bind="contactNote"></p>
+          </div>
+
+          <div class="contact-panel__actions">
+            <button class="email-chip" type="button" id="copyEmail" data-email="darkness.2000.2000.1000@gmail.com">
+              <svg class="ico" aria-hidden="true">
+                <use href="#i-mail" />
+              </svg>
+              <span class="email-chip__text" data-bind="email">darkness.2000.2000.1000@gmail.com</span>
+              <svg class="ico ico--copy" aria-hidden="true">
+                <use href="#i-copy" />
+              </svg>
+            </button>
+
+            <div class="contact-links" id="contactLinks"></div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    const projectData = [
-      {
-        title: "AI Video Generator",
-        image: "assets/img/project-AI.jpg",
-        alt: "AI Video Generator thumbnail",
-        summary: "Built an AI-powered video generation project with automation and media processing features.",
-        tech: "Python, JavaScript, HTML, CSS, API Integration, Git &amp; GitHub"
-      },
-      {
-        title: "Bank Management System",
-        image: "assets/img/project-python-flask1.jpg",
-        alt: "Bank Management System thumbnail",
-        summary: "Developed a banking system for handling accounts, transactions, and customer records securely.",
-        tech: "PHP, MySQL, SQL, HTML, CSS, JavaScript, XAMPP"
-      },
-      {
-        title: "DocSync / DocSync1",
-        image: "assets/img/project-library-logo.png",
-        alt: "DocSync project thumbnail",
-        summary: "Created a document synchronization and file management platform for easy sharing and organization.",
-        tech: "Python, Firebase Basics, HTML, CSS, JavaScript"
-      },
-      {
-        title: "YouTube Video Downloader",
-        image: "assets/img/project-music-player.png",
-        alt: "YouTube Video Downloader thumbnail",
-        summary: "Built a tool to download and manage videos from YouTube with a simple interface.",
-        tech: "Python, API Integration, HTML, CSS, JavaScript"
-      },
-      {
-        title: "Gilig System / GiligERP",
-        image: "assets/img/project-python-flask2.jpg",
-        alt: "Gilig ERP project thumbnail",
-        summary: "Designed an ERP and management platform for handling records, operations, and workflow management.",
-        tech: "PHP, MySQL, SQL, JavaScript, HTML, CSS, Git &amp; GitHub"
-      },
-      {
-        title: "Hospital Management System",
-        image: "assets/img/project-python-flask3.png",
-        alt: "Hospital Management System thumbnail",
-        summary: "Developed a healthcare management system for patient records, appointments, and hospital operations.",
-        tech: "PHP, MySQL, SQL, HTML, CSS, JavaScript, XAMPP"
-      },
-      {
-        title: "Hostel Management System",
-        image: "assets/img/project-python-flask4.jpg",
-        alt: "Hostel Management System thumbnail",
-        summary: "Created a hostel management platform for room allocation, student details, and fee management.",
-        tech: "PHP, MySQL, SQL, HTML, CSS, JavaScript"
-      },
-      {
-        title: "Hotel Management System",
-        image: "assets/img/project-python-django1.jpg",
-        alt: "Hotel Management System thumbnail",
-        summary: "Built a hotel booking and management system with reservation and customer handling features.",
-        tech: "PHP, MySQL, SQL, HTML, CSS, JavaScript"
-      },
-      {
-        title: "Land Record System",
-        image: "assets/img/project-python-django2.jpg",
-        alt: "Land Record System thumbnail",
-        summary: "Designed a land record management project for storing and managing ownership information digitally.",
-        tech: "PHP, MySQL, SQL, HTML, CSS, JavaScript"
-      },
-      {
-        title: "Laundry Management System",
-        image: "assets/img/project-python-django3.png",
-        alt: "Laundry Management System thumbnail",
-        summary: "Developed a laundry service management platform with order tracking and customer management.",
-        tech: "PHP, MySQL, HTML, CSS, JavaScript"
-      },
-      {
-        title: "Medical Card Generation System",
-        image: "assets/img/project-python-django4.jpg",
-        alt: "Medical Card Generation System thumbnail",
-        summary: "Built a system for generating and managing digital medical cards efficiently.",
-        tech: "PHP, MySQL, SQL, HTML, CSS"
-      },
-      {
-        title: "Food Recipe Website",
-        image: "assets/img/project-blog-logo.jpg",
-        alt: "Food Recipe Website thumbnail",
-        summary: "Created a recipe-sharing platform with food categories and recipe management features.",
-        tech: "React.js, JavaScript, HTML, CSS, API Integration"
-      },
-      {
-        title: "Portfolio / OLDPortfolio",
-        image: "assets/img/project-quizup-logo-1.png",
-        alt: "Portfolio project thumbnail",
-        summary: "Designed and developed a responsive personal portfolio website showcasing projects and technical skills.",
-        tech: "HTML, CSS, JavaScript, React.js, Git &amp; GitHub"
-      },
-      {
-        title: "Online Admission System",
-        image: "assets/img/project-ai-1.jpg",
-        alt: "Online Admission System thumbnail",
-        summary: "Built an online admission platform for student registration and application management.",
-        tech: "PHP, MySQL, SQL, HTML, CSS, JavaScript"
-      },
-      {
-        title: "Online Course Registration System",
-        image: "assets/img/project-AI-1378x1000.jpg",
-        alt: "Online Course Registration System thumbnail",
-        summary: "Developed a course registration system for managing student enrollments and subjects.",
-        tech: "PHP, MySQL, HTML, CSS, JavaScript"
-      },
-      {
-        title: "Online DJ Booking Management System",
-        image: "assets/img/project-ml-1.jpg",
-        alt: "Online DJ Booking Management System thumbnail",
-        summary: "Created a booking management platform for DJs and event scheduling.",
-        tech: "PHP, MySQL, JavaScript, HTML, CSS"
-      },
-      {
-        title: "Online Voting System",
-        image: "assets/img/project-ml-2.jpg",
-        alt: "Online Voting System thumbnail",
-        summary: "Built a secure online voting system with authentication and vote counting features.",
-        tech: "PHP, MySQL, SQL, HTML, CSS, JavaScript, Git &amp; GitHub"
-      },
-      {
-        title: "Orpheus FastAPI Project",
-        image: "assets/img/project-ml-3.jpg",
-        alt: "Orpheus FastAPI Project thumbnail",
-        summary: "Developed backend APIs using FastAPI for modern web applications and automation tasks.",
-        tech: "Python, REST API, API Integration, Git &amp; GitHub"
-      },
-      {
-        title: "Restaurant Table Booking System",
-        image: "assets/img/project-ml-4.jpg",
-        alt: "Restaurant Table Booking System thumbnail",
-        summary: "Created a restaurant reservation system for managing customer bookings and table allocation.",
-        tech: "PHP, MySQL, SQL, HTML, CSS, JavaScript"
-      },
-      {
-        title: "Shopping / Shop / Supermarket System",
-        image: "assets/img/project-ml-5.jpg",
-        alt: "Shopping system thumbnail",
-        summary: "Built an e-commerce and supermarket management platform with cart and product management features.",
-        tech: "PHP, MySQL, SQL, HTML, CSS, JavaScript, API Integration"
-      },
-      {
-        title: "Student Management System",
-        image: "assets/img/project-ml-6.jpg",
-        alt: "Student Management System thumbnail",
-        summary: "Developed a student information management system for handling records, attendance, and results.",
-        tech: "Java, MySQL, SQL, HTML, CSS"
-      },
-      {
-        title: "Student Portal",
-        image: "assets/img/project-ml-7.jpg",
-        alt: "Student Portal thumbnail",
-        summary: "Created an online student portal for accessing academic and personal information.",
-        tech: "PHP, MySQL, HTML, CSS, JavaScript"
-      },
-      {
-        title: "Universal Video Analyzer",
-        image: "assets/img/computer-vision-v2-04.png",
-        alt: "Universal Video Analyzer thumbnail",
-        summary: "Built a smart video analysis tool for extracting and processing video information.",
-        tech: "Python, REST API, API Integration, JavaScript"
-      },
-      {
-        title: "University ERP System",
-        image: "assets/img/project-ml-extra.jpg",
-        alt: "University ERP System thumbnail",
-        summary: "Developed a university ERP platform for administration, academics, and student management.",
-        tech: "PHP, MySQL, SQL, HTML, CSS, JavaScript, DevOps"
-      },
-      {
-        title: "University Management System",
-        image: "assets/img/gan.jpg",
-        alt: "University Management System thumbnail",
-        summary: "Created a complete university management project with modules for students, staff, and administration.",
-        tech: "Java, MySQL, SQL, HTML, CSS, JavaScript"
-      },
-      {
-        title: "Voice-Based AI News Assistant",
-        image: "assets/img/white-ai-wallpaper.jpg",
-        alt: "Voice-Based AI News Assistant thumbnail",
-        summary: "Built an AI-powered voice assistant that delivers news updates using speech and automation technologies.",
-        tech: "Python, REST API, API Integration, JavaScript, Firebase Basics"
-      }
-    ];
+  <!-- =========================================================== footer ==== -->
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-brand">
+        <img class="brand-mark" src="ameer.jpeg" alt="" width="40" height="40" />
+        <div>
+          <strong data-bind="name">Ameer Abdelkareem Osman</strong>
+          <small data-bind="note">Designed and built from scratch.</small>
+        </div>
+      </div>
 
-    const skillData = [
-      { name: "HTML", image: "assets/img/html5-300x300.jpg", alt: "HTML logo" },
-      { name: "CSS", image: "assets/img/css3-300x300.jpg", alt: "CSS logo" },
-      { name: "JavaScript", image: "assets/img/javascript.png", alt: "JavaScript logo" },
-      { name: "PHP", icon: "fa-code" },
-      { name: "Python", image: "assets/img/python-logo-1-300x300.jpg", alt: "Python logo" },
-      { name: "SQL", image: "assets/img/mysql-logo-1-300x300.jpg", alt: "SQL logo" },
-      { name: "React.js", icon: "fa-cube" },
-      { name: "Flutter", icon: "fa-mobile" },
-      { name: "Full Stack Development", icon: "fa-rocket" },
-      { name: "Authentication", icon: "fa-lock" },
-      { name: "REST API", icon: "fa-plug" },
-      { name: "API Integration", icon: "fa-exchange" },
-      { name: "Firebase", icon: "fa-bolt" },
-      { name: "Git &amp; GitHub", image: "assets/img/github.png", alt: "GitHub logo" },
-      { name: "IT Support", icon: "fa-life-ring" },
-      { name: "Technical Support", icon: "fa-headphones" },
-      { name: "Software Installation &amp; Configuration", icon: "fa-cogs" },
-      { name: "Software Development", icon: "fa-terminal" },
-      { name: "Web Services", icon: "fa-cloud" },
-      { name: "DevOps", icon: "fa-cubes" },
-      { name: "SEO (Search Engine Optimization)", icon: "fa-search" },
-      { name: "Digital Communication", icon: "fa-comments" },
-      { name: "UI/UX Design", icon: "fa-paint-brush" },
-      { name: "System Management", icon: "fa-desktop" },
-      { name: "Data Entry Software", icon: "fa-keyboard-o" },
-      { name: "Communication Skills", icon: "fa-bullhorn" },
-      { name: "Problem Solving", icon: "fa-lightbulb-o" },
-      { name: "Customer Service", icon: "fa-users" },
-      { name: "REST API Development", icon: "fa-code-fork" },
-      { name: "Firebase Basics", icon: "fa-fire" },
-      { name: "XAMPP Server Setup", icon: "fa-hdd-o" },
-      { name: "DevOps Basics", icon: "fa-gears" },
-      { name: "MongoDB", icon: "fa-database" },
-      { name: "React Native", icon: "fa-mobile" },
-      { name: "SQL &amp; Database Management", image: "assets/img/postgresql.png", alt: "Database logo" },
-      { name: "Frontend Web Development", icon: "fa-laptop" },
-      { name: "Backend Web Development", icon: "fa-code" }
-    ];
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    function renderProjectCard(project) {
-      const visual = project.image
-        ? `<img alt="${project.alt}" loading="lazy" class="responsive-img" src="${project.image}" />`
-        : `<div class="skill-fallback"><i class="fa ${project.icon || "fa-folder-open"}" aria-hidden="true"></i></div>`;
+      <p class="footer-copy">&copy; <span id="year"></span> <span data-bind="name">Ameer Abdelkareem Osman</span>.
+        All rights reserved.</p>
+    </div>
+  </footer>
 
-      return `
-        <div class="col s12 m6 l4">
-          <div class="card project-card hoverable">
-            <div class="card-image waves-effect waves-block waves-light">
-              ${visual}
-            </div>
-            <div class="card-content">
-              <span class="card-title teal-text hoverline">${project.title}</span>
-              <p class="project-summary">${project.summary}</p>
-              <p class="project-tech"><b>Tech:</b> ${project.tech}</p>
-            </div>
-          </div>
-        </div>`;
-    }
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg class="ico" aria-hidden="true">
+      <use href="#i-arrow" />
+    </svg>
+  </button>
 
-    function renderSkillCard(skill) {
-      const visual = skill.image
-        ? `<img alt="${skill.alt || skill.name}" loading="lazy" class="responsive-img" src="${skill.image}" />`
-        : `<div class="skill-fallback"><i class="fa ${skill.icon || "fa-code"}" aria-hidden="true"></i></div>`;
-
-      return `
-        <div class="col s6 m4 l3">
-          <div class="card skill-card hoverable">
-            <div class="card-image">
-              ${visual}
-            </div>
-            <div class="card-content">
-              <span class="skill-name">${skill.name}</span>
-            </div>
-          </div>
-        </div>`;
-    }
-
-    const projectGrid = document.getElementById("projects-grid");
-    if (projectGrid) {
-      projectGrid.innerHTML = projectData.map(renderProjectCard).join("");
-    }
-
-    const skillGrid = document.getElementById("skills-grid");
-    if (skillGrid) {
-      skillGrid.innerHTML = skillData.map(renderSkillCard).join("");
-    }
-
-    const root = document.documentElement;
-    let lastScrollY = window.scrollY || 0;
-    let scrollFrame = null;
-
-    function updateWaterEffect() {
-      const currentY = window.scrollY || 0;
-      const delta = currentY - lastScrollY;
-      const direction = delta >= 0 ? 1 : -1;
-      const driftX = Math.sin(currentY / 160) * 18 + (direction * Math.min(14, Math.abs(delta) * 1.2));
-      const driftY = Math.cos(currentY / 220) * 16;
-
-      root.style.setProperty('--water-x', `${driftX.toFixed(2)}px`);
-      root.style.setProperty('--water-y', `${driftY.toFixed(2)}px`);
-      root.style.setProperty('--water-strength', `${(0.12 + Math.min(0.28, Math.abs(delta) / 120)).toFixed(3)}`);
-
-      lastScrollY = currentY;
-      scrollFrame = null;
-    }
-
-    window.addEventListener('scroll', function () {
-      if (scrollFrame === null) {
-        scrollFrame = window.requestAnimationFrame(updateWaterEffect);
-      }
-    }, { passive: true });
-
-    updateWaterEffect();
-
-    const mobileToggle = document.querySelector('.button-collapse');
-    const mobileDrawer = document.getElementById('slide-out');
-    const mobileOverlay = document.querySelector('.mobile-drawer-overlay');
-
-    function setMobileNavOpen(isOpen) {
-      document.body.classList.toggle('nav-open', isOpen);
-
-      if (mobileDrawer) {
-        mobileDrawer.classList.toggle('is-open', isOpen);
-      }
-
-      if (mobileToggle) {
-        mobileToggle.setAttribute('aria-expanded', String(isOpen));
-      }
-    }
-
-    if (mobileToggle && mobileDrawer && mobileOverlay) {
-      mobileToggle.addEventListener('click', function (event) {
-        event.preventDefault();
-        setMobileNavOpen(!document.body.classList.contains('nav-open'));
-      });
-
-      mobileOverlay.addEventListener('click', function () {
-        setMobileNavOpen(false);
-      });
-
-      mobileDrawer.addEventListener('click', function (event) {
-        const link = event.target.closest ? event.target.closest('a') : null;
-
-        if (link && window.innerWidth <= 992) {
-          setMobileNavOpen(false);
-        }
-      });
-
-      window.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') {
-          setMobileNavOpen(false);
-        }
-      });
-
-      window.addEventListener('resize', function () {
-        if (window.innerWidth > 992) {
-          setMobileNavOpen(false);
-        }
-      });
-    }
-
-    var typed = new Typed('.typing',{
-      strings: ["Full Stack Developer", "IT Support", "Web Developer", "Problem Solver"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
+  <script src="assets/js/data.js?v=9"></script>
+  <script src="assets/js/app.js?v=9"></script>
 </body>
+
 </html>

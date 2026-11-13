@@ -97,8 +97,8 @@ window.PORTFOLIO = {
     },
     {
       label: "Email",
-      handle: "darkness.2000.2000.1000@gmail.com",
-      url: "mailto:darkness.2000.2000.1000@gmail.com",
+      handle: "ameerabdelkareemosman@gmail.com",
+      url: "mailto:ameerabdelkareemosman@gmail.com",
       icon: "mail"
     },
     {
@@ -622,7 +622,7 @@ window.PORTFOLIO = {
     heading: "Let's build something together.",
     body:
       "Got a project, a role, or a system that needs fixing? Send a message and I'll get back to you.",
-    email: "darkness.2000.2000.1000@gmail.com",
+    email: "ameerabdelkareemosman@gmail.com",
     copyLabel: "Copy email",
     copiedLabel: "Copied",
     resume: "Resume.pdf",

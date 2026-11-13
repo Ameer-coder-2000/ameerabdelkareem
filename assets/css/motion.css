@@ -1,0 +1,51 @@
+/* Pointer-led polish layered over the existing portfolio design. */
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .motion-card {
+    transform-style: preserve-3d;
+    background-image: radial-gradient(
+      260px circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+      rgba(47, 91, 255, 0.075),
+      transparent 74%
+    );
+    transition: transform 420ms var(--ease), box-shadow 420ms var(--ease),
+      border-color 350ms ease, background-image 250ms ease;
+  }
+
+  .motion-card:hover {
+    transform: perspective(1100px)
+      rotateX(var(--tilt-y, 0deg))
+      rotateY(var(--tilt-x, 0deg))
+      translateY(-5px)
+      scale(1.012);
+  }
+
+  .portrait__frame.motion-card:hover {
+    transform: perspective(1000px)
+      rotateX(var(--tilt-y, 0deg))
+      rotateY(var(--tilt-x, 0deg))
+      translateY(-2px)
+      scale(1.008);
+  }
+
+  .float-card.pointer-float {
+    translate: var(--float-x, 0px) var(--float-y, 0px);
+    transition: translate 420ms var(--ease);
+  }
+
+  .magnetic-control {
+    translate: var(--mag-x, 0px) var(--mag-y, 0px);
+    transition: translate 280ms var(--ease);
+  }
+
+  .magnetic-control:focus-visible {
+    outline-offset: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .motion-card,
+  .float-card.pointer-float,
+  .magnetic-control {
+    transition: none !important;
+  }
+}

@@ -215,5 +215,5 @@ Google Fonts in `index.html`.
 ## Contact
 
 - LinkedIn: [Ameer Abdelkareem Osman](https://in.linkedin.com/in/ameer-abdelkareem-osman-9877a72b4)
-- Email: `darkness.2000.2000.1000@gmail.com`
+- Email: `ameerabdelkareemosman@gmail.com`
 - GitHub: [Ameer-coder-2000](https://github.com/Ameer-coder-2000/ameerabdelkareem)
